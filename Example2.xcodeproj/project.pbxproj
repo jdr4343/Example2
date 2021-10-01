@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		40347DC82706E6CB003A757D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40347DC72706E6CB003A757D /* AppDelegate.swift */; };
 		40347DCA2706E6CB003A757D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40347DC92706E6CB003A757D /* SceneDelegate.swift */; };
-		40347DCC2706E6CB003A757D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40347DCB2706E6CB003A757D /* ViewController.swift */; };
+		40347DCC2706E6CB003A757D /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40347DCB2706E6CB003A757D /* ProgressViewController.swift */; };
 		40347DCF2706E6CB003A757D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40347DCD2706E6CB003A757D /* Main.storyboard */; };
 		40347DD22706E6CB003A757D /* Example2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40347DD02706E6CB003A757D /* Example2.xcdatamodeld */; };
 		40347DD42706E6CD003A757D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40347DD32706E6CD003A757D /* Assets.xcassets */; };
 		40347DD72706E6CD003A757D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40347DD52706E6CD003A757D /* LaunchScreen.storyboard */; };
+		40347DE02706E7A5003A757D /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40347DDF2706E7A5003A757D /* CustomProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40347DC42706E6CB003A757D /* Example2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40347DC72706E6CB003A757D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40347DC92706E6CB003A757D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		40347DCB2706E6CB003A757D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		40347DCB2706E6CB003A757D /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		40347DCE2706E6CB003A757D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40347DD12706E6CB003A757D /* Example2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Example2.xcdatamodel; sourceTree = "<group>"; };
 		40347DD32706E6CD003A757D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40347DD62706E6CD003A757D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40347DD82706E6CD003A757D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40347DDF2706E7A5003A757D /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +60,9 @@
 		40347DC62706E6CB003A757D /* Example2 */ = {
 			isa = PBXGroup;
 			children = (
+				40347DDE2706E78B003A757D /* progress */,
 				40347DC72706E6CB003A757D /* AppDelegate.swift */,
 				40347DC92706E6CB003A757D /* SceneDelegate.swift */,
-				40347DCB2706E6CB003A757D /* ViewController.swift */,
 				40347DCD2706E6CB003A757D /* Main.storyboard */,
 				40347DD32706E6CD003A757D /* Assets.xcassets */,
 				40347DD52706E6CD003A757D /* LaunchScreen.storyboard */,
@@ -68,6 +70,15 @@
 				40347DD02706E6CB003A757D /* Example2.xcdatamodeld */,
 			);
 			path = Example2;
+			sourceTree = "<group>";
+		};
+		40347DDE2706E78B003A757D /* progress */ = {
+			isa = PBXGroup;
+			children = (
+				40347DCB2706E6CB003A757D /* ProgressViewController.swift */,
+				40347DDF2706E7A5003A757D /* CustomProgressView.swift */,
+			);
+			path = progress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40347DCC2706E6CB003A757D /* ViewController.swift in Sources */,
+				40347DCC2706E6CB003A757D /* ProgressViewController.swift in Sources */,
 				40347DC82706E6CB003A757D /* AppDelegate.swift in Sources */,
 				40347DCA2706E6CB003A757D /* SceneDelegate.swift in Sources */,
+				40347DE02706E7A5003A757D /* CustomProgressView.swift in Sources */,
 				40347DD22706E6CB003A757D /* Example2.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
